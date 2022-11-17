@@ -1,0 +1,379 @@
+import java.util.*;
+class Product {
+  String pname;
+  int pid;
+  String pbrand;
+  int pquantity;
+  void orderEligiblity(){
+    if(pquantity<10){
+      System.out.println("order cannot be taken");
+    }
+    else{
+      System.out.println("order taken");
+  }
+  }
+  }
+class Order{
+  int oid;
+  String oday;
+  String city;
+  java.util.Date date = new java.util.Date();
+
+
+}
+class Work{
+  public static void main(String args[]){
+    Product pro=new Product();
+    pro.pname="mobile";
+    pro.pid=2567;
+    pro.pbrand="realme 9 pro 5G";
+    pro.pquantity=15;
+    Order ord=new Order();
+    ord.oid=1236588;
+    ord.city="Tiruvuru";
+    //ord.date;
+    System.out.println(pro.pname+" "+pro.pid+" "+pro.pbrand+" "+pro.pquantity);
+  
+    System.out.println(ord.oid+" "+ord.city);
+    System.out.println(Date.now());
+  
+  }
+}
+
+
+
+/*write a java program to print
+  product details with:product id,product brand and product quantity and methods are ordereligiblity.
+  order with:order id, order current day, order current date and order city*/
+import java.util.*;
+class Product {
+  String pname;
+  int pid;
+  String pbrand;
+  int pquantity;
+  void orderEligiblity(){
+    if(pquantity<10){
+      System.out.println("order cannot be taken");
+    }
+    else{
+      System.out.println("order taken");
+    }
+  }
+  }
+class Order{
+  int oid;
+  //String oday;
+  String city;
+  void print(){
+  java.util.Date date = new java.util.Date();
+  System.out.println(date);
+  }
+}
+class Work{
+  public static void main(String args[]){
+    Product pro=new Product();
+    pro.pname="mobile";
+    pro.pid=2567;
+    pro.pbrand="realme 9 pro 5G";
+    pro.pquantity=15;
+    Order ord=new Order();
+    ord.oid=1236588;
+    ord.city="Tiruvuru";
+    ord.print();
+    //ord.date;
+    System.out.println(pro.pname+" "+pro.pid+" "+pro.pbrand+" "+pro.pquantity);
+   
+    System.out.println(ord.oid+" "+ord.city);
+   
+   
+  }
+}
+
+
+
+
+why we need OOPs
+coode reusability
+user readable
+data security
+real time objects implementation
+
+what is OOPs
+
+class
+object
+constructor
+this
+static
+inheritance-is a relation
+aggregation--has-a
+
+loose coupling--if one object destroyed another object can survive
+tight coupling-if one object destroyed another object can not survive
+
+Association
+one-one
+one-many
+many-one
+many-many
+
+
+
+//multiple methods have same name with different parameters(Method overloading)
+
+class Addition{
+
+  void sum(int a,int b){
+    System.out.println("Sum is "+(a+b));
+  }
+  
+  void sum(int a,int b,int c){
+     System.out.println("Sum is "+(a+b+c));
+  }
+   void sum(int a,float b){
+     System.out.println("Sum is "+(a+b));
+  }
+  void sum(float a,float b){
+     System.out.println("Sum is "+(a+b));
+  }
+   void sum(float a,int b){
+     System.out.println("Sum is "+(a+b));
+  }
+}
+class Sample{
+  public static void main(String args[]){
+  Addition add=new Addition();
+    add.sum(23,45);
+    add.sum(1,2,3);
+    add.sum(12,34.5f);
+    add.sum(34.5f,12.3f);
+    add.sum(23.5f,12);
+  }
+}
+
+
+
+
+1.Create a class named 'PrintNumber' to print various numbers of different datatypes by creating different methods with the same name 'printn' having a parameter for each datatype.
+
+2.Create a class to print an integer and a character with two methods having the same name but different sequence of the integer and the character parameters.
+For example, if the parameters of the first method are of the form (int n, char c), then that of the second method will be of the form (char c, int n).
+3.Create a class to print the area of a square and a rectangle. The class has two methods with the same name but different number of parameters. The method for printing area of rectangle has two parameters which are length and breadth respetively while the other method for printing area of square has one parameter which is side of square.
+
+4.Create a class 'Student' with three data members which are name, age and address. The constructor of the class assigns default values name as "unknown", age as '0' and address as "not available". It has two members with the same name 'setInfo'. First method has two parameters for name and age and assigns the same whereas the second method takes has three parameters which are assigned to name, age and address respectively. Print the name, age and address of 10 students.
+Hint - Use array of objects
+
+
+polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form.
+
+
+In Java polymorphism is mainly divided into two types:
+
+Compile-time Polymorphism(Method overloading/Static binding)
+Runtime Polymorphism(Method overriding/Dynamic binding)
+
+Method Overloading: When there are multiple methods with the same name but different parameters then these methods are said to be overloaded. method can be overloaded by change in the number of arguments or/and a change in the type of arguments.
+
+Method Overriding
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+
+Usage of Java Method Overriding
+Method overriding is used to provide the specific implementation of a method which is already provided by its superclass.
+Method overriding is used for runtime polymorphism
+
+Rules for Java Method Overriding
+The method must have the same name as in the parent class
+The method must have the same parameter as in the parent class.
+There must be an IS-A relationship (inheritance).
+
+
+
+class Vehicle{
+  void run(){
+    System.out.println("Vehicle is running");
+  }
+}
+class Bike extends Vehicle{
+  //overriding
+  void run(){
+    System.out.println("Bike is running");
+  }
+}
+
+class Sample{
+  public static void main(String args[]){
+    Bike b=new Bike();
+    b.run();
+  }
+}
+
+
+
+Create a class 'Degree' having a method 'getDegree' that prints "I got a degree". It has two subclasses namely 'Undergraduate' and 'Postgraduate' each having a method with the same name that prints "I am an Undergraduate" and "I am a Postgraduate" respectively. Call the method by creating an object of each of the three classes.
+
+
+
+    
+A boy has his money deposited $1000, $1500 and $2000 in banks-Bank A, Bank B and Bank C respectively. We have to print the money deposited by him in a particular bank.
+Create a class 'Bank' with a method 'getBalance' which returns 0. Make its three subclasses named 'BankA', 'BankB' and 'BankC' with a method with the same name 'getBalance' which returns the amount deposited in that particular bank. Call the method 'getBalance' by the object of each of the three banks.
+​
+    
+All the banks operating in India are controlled by RBI. RBI has set a well defined guideline (e.g. minimum interest rate, minimum balance allowed, maximum withdrawal limit etc) which all banks must follow. For example, suppose RBI has set minimum interest rate applicable to a saving bank account to be 4% annually; however, banks are free to use 4% interest rate or to set any rates above it.
+Write a JAVA program to implement bank functionality in the above scenario and demonstrate the dynamic polymorphism concept. Note: Create few classes namely Customer, Account, RBI (Base Class) and few derived classes (SBI, ICICI, PNB etc). Assume and implement required member variables and functions in each class.
+Hint:
+Class Customer
+{​​
+//Personal Details ...
+// Few functions ...
+}​​
+Class Account
+{​​
+// Account Detail ...
+// Few functions ...
+}​​
+Class RBI
+{​​
+Customer c; //hasA relationship
+Account a; //hasA relationship
+..
+Public double GetInterestRate() {​​ }​​
+Public double GetWithdrawalLimit() {​​ }​​
+}​​
+Class SBI: public RBI
+{​​
+//Use RBI functionality or define own functionality.
+}​​
+Class ICICI: public RBI
+{​​
+//Use RBI functionality or define own functionality.
+}​​
+
+
+
+class Bank{
+  int IFSCcode=123444;
+  void rateOfInterest(){
+    System.out.println("Interest is 80ps");
+  }
+}
+class SBI extends Bank{
+  int IFSCcode=567890;
+   void rateOfInterest(){
+    System.out.println("Interest is 60ps");
+  }
+}
+class HDFC extends Bank{
+  int IFSCcode=9876;
+   void rateOfInterest(){
+    System.out.println("Interest is 70ps");
+     super.rateOfInterest();
+  }
+   void printIFSC(){
+       System.out.println("Parent IFSC:"+super.IFSCcode);
+       System.out.println("childclass IFSC:"+IFSCcode);
+     }
+}
+class Sample{
+  public static void main(String args[]){
+    HDFC hdfc=new HDFC();
+    System.out.println(hdfc.IFSCcode);
+    hdfc.rateOfInterest();
+    hdfc.printIFSC();
+  }
+} 
+
+
+
+class Student{
+  int id;
+  String name;
+  Student(int id,String name){
+    this.id=id;
+    this.name=name;
+  }
+  
+}
+class Emp extends Student{
+  //int id;
+//String name;
+  int salary;
+  Emp(int id,String name,int salary){
+    super(id,name);
+    this.salary=salary;
+  }
+  void display(){
+    System.out.println(id+name+salary);
+  }
+}
+class Sample{
+  public static void main(String args[]){
+    
+  Emp e=new Emp(1,"lalitha",67000);
+    e.display();
+    
+  }
+}
+
+
+
+
+The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+
+
+Usage of Java super Keyword
+super can be used to refer immediate parent class instance variable.
+super can be used to invoke immediate parent class method.
+super() can be used to invoke immediate parent class constructor.
+
+The final keyword in java is used to restrict the user. The java final keyword can be used in many context. Final can be:
+
+variable--if declare with a fina keyword we cannot change value
+method--if declare with a final keyword we cannot override
+class--if declare with final keyword we cannot inherit
+
+
+
+
+Suppose we want to store the information about students and teachers in a school. The information to be stored includes the name, age and marks of students and the name, age and salary of the teachers.
+Here, name and age have to be stored for both students and teachers and we also know that both students and teachers are persons.
+Therefore, we can make Person as a class with name and age as attributes, and can make Student and Teacher as the subclasses of Person. In the Student class, we can define an additional marks attribute and in the Teacher class an additional salary attribute.
+Now let’s implement this in Java using super wherever necessary.
+
+
+class A
+  {
+    A()
+    {
+      System.out.println("a");
+    }
+  }
+class B
+  {
+    B()
+    {
+      System.out.println("b");
+    }
+  }
+class C extends B
+  {
+    C()
+    {
+      System.out.println("c");
+    }
+  }
+class Sample{
+  public static void main(String args[]){
+      C c=new C();
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
