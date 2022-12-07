@@ -1,0 +1,101 @@
+<!--Exercise 3: In this HTML page, Create a form with all the fields as shown below. 
+
+1. First name
+2. Middle name
+3. Last name
+4. gender
+5. Phone number
+6. Date of Birth
+7. Current Address
+8. Qualification
+9. Email id
+10. Register and clear buttons
+11. Add validations for name, Email id, Qualification. and phone number should take only 10 numbers
+
+After completion of this form click on preview link to see your output and submit the assignment to gitHub. -->
+
+<Html>     
+<Head>      
+<Title>     
+Create a Registration form   
+</Title>  
+</Head> 
+  <style> body {  
+      color: #000;  
+      height: 100vh;  
+      background-color: #FBAB7E;  
+      background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  
+   }  
+  label{
+font-size:15px;
+font-weight:700
+}
+  textarea{
+width:300px;
+padding:7px;
+height:100px;
+border-radius:5px;
+border:1px solid #cbcbcb;
+box-shadow:inset 0 1px 2px rgba(0,0,0,0.18)
+}</style>
+
+
+<center>
+<Body>   
+The following tags are used in this Html code for creating the Registration form:  
+<br> 
+  <br>
+<form>    
+<label> First name </label>           
+<input type="text" name="first name" size="15"/> <br>  <br>  
+<label> Middle name: </label>           
+<input type="text" name="middle name" size="15"/> <br>  <br>     
+<label> Last name: </label>           
+<input type="text" name="last name" size="15"/> <br>  <br>    
+<label>     
+Course :    
+</label>     
+<select>    
+<option value="Qualification">Qualification</option>    
+<option value="BCA">BCA</option>    
+<option value="BBA">BBA</option>    
+<option value="B.Tech">B.Tech</option>    
+<option value="MBA">MBA</option>    
+<option value="MCA">12</option> 
+<option value="MCA">10</option> 
+<option value="M.Tech">M.Tech</option>    
+</select>    
+<br>    
+<br>    
+<label>     
+Gender :    
+</label><br>    
+<input type="radio" name="gender"/> Male <br>    
+<input type="radio" name="gender"/> Female <br>    
+<input type="radio" name="gender"/> Other    
+<br>    
+<br>
+  <lable><label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday"></lable>
+<br>
+<br>
+Phone :    
+<label>      
+<input type="text" name="phone" size="10"> <br> <br>    
+Address    
+<br>    
+<textarea cols="80" rows="5" value="Current address">    
+</textarea>    
+<br> <br>    
+Email:    
+<input type="email" id="email" name="email"> <br>      
+<br> <br>    
+Password:    
+<input type="Password" id="pass" name="pass"> <br>     
+<br> <br>    
+<input type="submit" value="Submit">    
+<input type="Clear" value="Clear"> 
+</form>   
+</center>
+</Body>
+</Html>  

@@ -1,0 +1,39 @@
+<!-- Exercise: 1.4 : Create a list radio buttons for group of colours --> 
+<html>
+  
+<head>
+    <style>
+        #Yellow {
+            accent-color: pink;
+        }
+  
+        #Green {
+            accent-color: rgb(0, 255, 0);
+        }
+  
+        #auto {
+            accent-color: auto;
+        }
+  
+        #Red {
+            accent-color: #FF0000;
+        }
+    </style>
+</head>
+  
+<body>
+    <center>
+        <h3> Radio button color change </h3>
+    </center>
+    <input type="radio" id="Yellow" name="colors" value="Yellow">
+    <label for="Yellow">Yellow</label><br>
+    <input type="radio" id="Green" name="colors" value="Green">
+    <label for="Green">Green using RGB</label><br>
+    <input type="radio" id="auto" name="colors" value="auto">
+    <label for="auto">auto-color set by browser</label><br>
+    <input type="radio" id="Red" name="colors" value="Red">
+    <label for="Red">Red color using hex representation
+    </label><br>
+</body>
+  
+</html>

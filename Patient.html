@@ -1,0 +1,143 @@
+<!-- Patient’s Registration 
+This page is used to register patients into the system and to admit them.
+
+Assign a unique id to each patient admitted.
+
+Add a patient’s personal details:
+Add a patient’s details to your page whenever there is a new patient admitted.
+The patient details should include his/her name, age, gender, Aadhar Card number, contact number, Emergency contact number, Complete address, etc.
+
+Guardian's Information: -
+Add a patient’s guardian’s details to your page whenever there is a new patient    admitted. The details should include his/her name, age, gender, Aadhar Card number, contact number, Complete address, etc.
+
+COVID 19: Past 1 year information: 
+In this section we will be collecting their past record related to covid. The details should include Travel info: Did He/she travel in the past 1 Month?, Vaccine Doses, Date of last dose, Date of last Covid test, If patient is showing any symptoms? etc.
+
+Insurance details: 
+We should collect their insurance details (if any) like insurance membership, Insurance number, etc. 
+
+And take “Date of admission” then “Submit Button” at the bottom of the page.-->
+<html>
+  <head>
+    <title>Patient’s Registration Form</title>
+  </head>
+  <style>
+    body{
+      width:70%;
+      height:150px;
+      padding:80px;
+      font-style:normal;
+      background-color: pink;
+      font-size: large;
+    }
+    
+  </style>
+  <body>
+    <fieldset>
+         <h1>Patient’s Registration Form</h1>
+             <form>
+               <fieldset>
+                 <legend>Patient’s Registration Form</legend>
+                 <label> his/her name  </label>           
+<input type="text" name="his/her name " size="15"/> <br>  <br>
+                 <label>age  </label>           
+<input type="text" name="age " size="15"/> <br>  <br> 
+      <label for="gender"> Select you gender</label>
+  <select name="gender">
+	<option value="none" selected>Gender</option>
+	<option value="male">Male</option>
+	<option value="female">Female</option>
+	<option value="other">other</option>
+</select>
+ <br> <br>
+      <label>Aadhar Card number  </label>           
+<input type="text" name="Aadhar Card number" size="15"/> <br>  <br> 
+      <label>contact number  </label>           
+<input type="text" name="contact number" size="15"/> <br>  <br> 
+      <label>Emergency contact number  </label>           
+<input type="text" name="Emergency contact number " size="15"/> <br>  <br> 
+      <label>Complete address  </label>           
+ <textarea name="address" cols="20" rows="3" required="required">Enter address...</textarea> </fieldset>
+               <fieldset>
+               <h1>Guardian's Information: </h1>
+                <label> his/her name  </label>           
+<input type="text" name="his/her name " size="15"/> <br>  <br>
+                 <label>age  </label>           
+<input type="text" name="age " size="15"/> <br>  <br> 
+      <label for="gender"> Select you gender</label>
+  <select name="gender">
+	<option value="none" selected>Gender</option>
+	<option value="male">Male</option>
+	<option value="female">Female</option>
+	<option value="other">other</option>
+</select>
+ <br> <br>
+      <label>Aadhar Card number  </label>           
+<input type="text" name="Aadhar Card number" size="15"/> <br>  <br> 
+      <label>contact number  </label>           
+<input type="text" name="contact number" size="15"/> <br>  <br> 
+      <label>Emergency contact number  </label>           
+<input type="text" name="Emergency contact number " size="15"/> <br>  <br> 
+      <label>Complete address  </label>           
+ <textarea name="address" cols="20" rows="3" required="required">Enter address...</textarea> <br>  <br> </fieldset>
+               <h1>COVID 19:</h1>
+               <h2>travel info:</h2>
+                <label> Did He/she travel in the past 1 Month? </label>           
+<input type="text" name=" Did He/she travel in the past 1 Month? " size="15"/> <br>  <br> 
+               <h3>Vaccine Doses</h3>
+               <label>Enter no of doses</label>
+               <select>
+                 <option>1</option>
+                 <option>2</option>
+                 <option>Booster</option>
+               </select><br>
+               <br>
+      <label>Date of last dose  </label>           
+<input type="date" name="Date of last dose " size="20" width="50"/> <br>  <br> 
+               <label>Date of last Covid test  </label>           
+<input type="date" name="Date of last Covid test " size="20" width="50"/> <br>  <br> 
+                <label>If patient is showing any symptoms? yes/No  </label>  <br>         
+               <label>yes</label>
+<input type="radio" name="Select"  id="yes" size="20" width="50"/> 
+               <label>No</label>
+               <input type="radio" name="Select " id="No" size="20" width="50"/> 
+               <br>  <br> 
+
+
+               <fieldset>
+               <h1>Insurance details: </h1>
+               <label>Primary Insurance  </label>          
+<input type="text" name="Primary Insurance" size="20" width="50"/> <br>  <br> 
+               <label>Secondary Insurance  </label>          
+<input type="text" name="Secondary Insurance" size="20" width="50"/> <br>  <br> 
+               <h2>INSURED INFORMATION(IF OTHER THAN PATIENT)-We will request to scan your ID and insurance card</h2>
+               
+               <label>Subscriber/policy Holder:  </label>          
+<input type="text" name="Subscriber/policy Holder:" size="20" width="50"/> <br>  <br> 
+               <label>Relationship to patient  </label>          
+<input type="text" name="Relationship to patient" size="20" width="50"/> <br>  <br> 
+               <label>Social Security number: </label>          
+<input type="text" name="Social Security number:" size="20" width="50"/> <br>  <br> 
+               <label>Address: </label>          
+ <textarea name="address" cols="20" rows="3" required="required">Enter address...</textarea><br>  <br>
+               <label>Date of Birth: </label>          
+<input type="date" name="Date of Birth:" size="20" width="50"/> <br>  <br> 
+                <label>His or Her Employer: </label>          
+<input type="text" name="His or Her Employer:" size="20" width="50"/> <br>  <br>
+               <label>Work phone Number: </label>          
+<input type="text" name="Work phone Number:" size="20" width="50"/> <br>  <br>
+
+
+                 <label>Date of admission </label>          
+<input type="date" name="Date of admission:" size="20" width="50"/> <br>  <br>
+               <input type="submit" value="Submit" style="background-color: red;">
+                 <input type="reset" value="reset" style="background-color: red;">
+                 </fieldset>
+               </fieldset>
+             </form>
+          
+           
+         <input type="back" value="back" style="background-color: red;">
+    
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!--Exercise 2: In this HTML page, Create a student login form which contains 
+Student Details text as the caption student id, student name, student email, Branch, Year, take radio button for male/female and Submit/Login button.
+After completion of this excercise click on preview link to see your output and submit the assignment to gitHub. -->
+
+<html>
+ <style>input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+   input[type=text] {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+   input {
+  width: 50%;
+}
+   input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+  </style>
+
+    <body>
+    <form>
+    <legend><h3>Student login</h3></legend>
+    <table>
+        <tr>
+        <td><label>Student Name:</label></td>
+        <td><input type="text" name="fname"  required></td>
+        </tr>
+      <tr>
+        <td><label>Student id:</label></td>
+        <td><input type="text" name="id"  required></td>
+        </tr>
+      <tr>
+        <td><label>year:</label></td>
+        <td><input type="text" name="year"  required></td>
+        </tr>
+        <tr>
+        <td><label>Gender:</label></td>
+        <td><input type="radio" value="female" name="gender"><label>Female</label>            <input type="radio" value="male" name="gender"><label >Male</label>
+           <input type="radio" value="male" name="gender"><label >Others</label>
+                </td>
+                </tr>
+                   <tr>
+                    <td><label>Branch: </label></td>
+                    <td>
+                        <select class="txt">
+                            <option>--Select your Branch--</option>
+                            <option>CSE</option>
+                            <option>IT</option>
+                            <option >ECE</option>
+                            <option >EEE</option>
+                            <option >CIVIL</option>
+                        </select>
+                    </td>
+                </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+          </table> 
+      <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

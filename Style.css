@@ -1,0 +1,60 @@
+.navbar a{
+    float: left;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Gill Sans';
+    width: 18%;
+ 
+    
+}
+.navbar{
+   background-color: black;
+   width: 100%;
+   border-style: dotted;
+   overflow: auto;
+}
+.navbar a:hover{
+    background-color: grey;
+ 
+}
+ 
+.navbar a.active{
+    background-color: red;
+}
+ .img{
+                float: right;
+                width:10%;
+               
+                margin:5px;
+                height:16%;
+            }
+.img1{
+                float: right;
+                width:10%;
+               
+                margin:5px;
+                height:18%;
+            }
+.img2{
+                float: right;
+                width:10%;
+               
+                margin:5px;
+                height:15%;
+            }
+
+p{
+  text-style: italic;
+  
+}
+. foot{
+   background-color:black;
+  text-style:italic;
+}
+
+. Medicine{
+   width:18%;
+  padding:80px;
+}

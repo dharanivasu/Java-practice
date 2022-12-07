@@ -1,0 +1,24 @@
+<!-- Exercise 2.3: Using adjacent sibling selector, display list items in an ordered list and change the background colour to yellow for the element which is an adjacent sibling for the selected element. -->
+
+<html>
+    <head>
+        <style>
+            
+           div + ol {
+                color:green;
+                background-color: yellow;
+                padding: 10px;
+            }
+        </style>
+    </head>
+     
+    <body>
+      <div>
+        <ol>
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Milk</li>
+        </ol>
+      </div>
+    </body>
+</html>

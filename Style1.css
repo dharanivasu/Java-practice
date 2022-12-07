@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+ background: #fff;
+}
+.logo{
+  width: 100px;
+}
+#eye{
+  width: 27px;
+}
+.main{
+  width: 100%;
+  position: absolute;
+}
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-5%);
+  border: 1px soild #d5d2d2;
+  border-radius: 10px;
+  width: 750px;
+  padding: 25px;
+  
+}
