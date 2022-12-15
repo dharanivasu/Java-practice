@@ -1,9 +1,8 @@
-//1 Write a Java program to create a new array list, add some colors (string) and print out the collection
-
+// 2 Write a Java program to iterate through all elements in a array list
 
 import java.util.*;
 
- class Color {
+ class Iterate {
   public static void main(String args[]) {
     
   List<String> list = new ArrayList<String>();
@@ -12,6 +11,10 @@ import java.util.*;
   list.add("Orange");
   list.add("White");
   list.add("Black");
-  System.out.println(list);
+    
+   Iterator itr=list.iterator();
+     for (String iterate : list) {
+    System.out.println(iterate);
+    }
  }
 }

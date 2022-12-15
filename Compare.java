@@ -1,7 +1,7 @@
-// 9 Write a Java program to copy one array list into another.
+// 13 Write a Java program to compare two array lists\
 import java.util.*;
-  class Copy {
-  public static void main(String[] args) {
+  class Compare {
+  public static void main(String args[]) {
   List<String> List1 = new ArrayList<String>();
   List1.add("abc");
   List1.add("def");
@@ -14,10 +14,13 @@ import java.util.*;
   List2.add("GHI");
   List2.add("JKL");
   System.out.println("List2: " + List2);
-  
-  Collections.copy(List1, List2);
-  System.out.println("Copy List1 to List2,\nAfter copy:");
-  System.out.println("List1: " + List1);
-  System.out.println("List2: " + List2);
- }
-}
+     if (List1.equals(List2) == true) {
+            System.out.println(" Array List are equal");
+        }
+        else
+        
+        {
+            System.out.println(" Array List are not equal");
+        }
+  }
+  }

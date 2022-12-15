@@ -1,7 +1,6 @@
-// 5 Write a Java program to update specific array element by given element.
-
+// 6 Write a Java program to remove the third element from a array list.
  import java.util.*;
-   class Update {
+   class Remove {
   public static void main(String[] args) {
  
   List<String> list = new ArrayList<String>();
@@ -12,8 +11,7 @@
   list.add("Kiwi");
  
   System.out.println(list);
-    list.set(2, "Gava");
-    list.set(0, "Mango");
-    System.out.println(list);
+    list.remove(2);
+    System.out.println("After removing third element: " +list);
   }
    }
