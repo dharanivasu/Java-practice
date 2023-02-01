@@ -1,0 +1,2 @@
+rema csc 50000
+ragav it 60000
