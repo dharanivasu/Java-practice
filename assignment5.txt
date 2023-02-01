@@ -1,0 +1,152 @@
+import java.util.Scanner;
+class ArraySum{
+   public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      int[] array = new int[10];
+      int sum = 0;
+      System.out.println("Enter the elements:");
+      for (int i=0; i<10; i++)
+      {
+    	  array[i] = sc.nextInt();
+      }
+      for( int num : array) {
+          sum = sum+num;
+      }
+      System.out.println("Sum of array elements is:"+sum);
+   }
+}
+
+
+import java.util.Scanner;
+
+public class GroceryItems {
+ 
+public static void main(String args[])
+     {
+       
+         Scanner sc=new Scanner(System.in);
+         int n;     
+         System.out.println("Enter the size of the array");
+         n=sc.nextInt(); 
+       int arr[]=new int[n];   
+        System.out.println("Enter the array");  
+      
+        for(int i=0;i<n;i++)     
+        {
+          
+         arr[i]=sc.nextInt();
+        }
+         
+      
+        for(int i=0;i<n;i++)   
+        {
+            for(int j=i+1;j<n;j++)   
+            {
+                if(arr[i]<arr[j])    
+                {
+                  int temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+       
+
+        System.out.println("The highest price you incurred is "+arr[0]);    
+        
+    }
+}
+
+
+
+import java.util.*;
+class Temperature{
+  public static void main(String args[]){
+    int totaltemp=0;
+    double temp[]=new double[7];
+    Scanner Sc=new Scanner(System.in);
+    for(int i=0;i<7;i++){
+      System.out.println("enter the temperature of day" + (i+1)+ ": ");
+      temp[i]=Sc.nextDouble();
+    }
+    for(int i=0;i<7;i++){
+      if(totaltemp == temp[i]){
+        System.out.println();
+      }
+    }
+    System.out.println("enter the number of day is :" +temp.length);
+    System.out.println("the average temperature for the week is:" +(totaltemp/temp.length));
+  }
+}
+
+
+
+import java.util.Scanner;
+class TransposeMatrix {
+    public static void main(String args[]){
+      Scanner Sc=new Scanner(System.in);
+      System.out.println("Enter the number of rows");
+      int row=Sc.nextInt();
+      System.out.println("Enter the number of cols");
+      int cols=Sc.nextInt();
+      int a[][]=new int[3][3];
+      for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+          a[i][j]=Sc.nextInt();
+        }
+      }
+      for(int i=0;i<row;i++){
+        for(int j=0;j<cols;j++){
+          System.out.print(a[i][j]);
+        }
+        System.out.println("  After Transpose Matrix:");
+      }
+    }
+}
+
+
+import java.util.*;
+class TwoDimentionalArray {
+
+
+    public static void main(String args[]){
+      Scanner Sc=new Scanner(System.in);
+      System.out.println("Enter the rows and column");
+      
+      int n1=Sc.nextInt();
+      int n2=Sc.nextInt();
+      int i,j;
+      
+      int a[][]=new int[n1][n2];
+     
+      for( i=0;i<n1;i++){
+         for( j=0;j<n2;j++){
+            
+            System.out.print("Enter arr " + "[ " + i + " ]" + "[ " + j + " ] : ");
+            a[i][j]=Sc.nextInt();
+         }
+      }
+      int max=a[0][0];
+      int index1=0,index2=0;
+      
+      for( i=0;i<n1;i++){
+         for( j=0;j<n2;j++){
+           
+            if(a[i][j]>max){
+               max=a[i][j];
+              
+               
+              index1=i;
+              index2=j;
+            }
+            
+
+         }
+         
+      }
+ 
+
+       System.out.print("Largest element in array is  " +max+ " arr " + "[ " + index1 + " ]" + "[ " + index2 + " ]  ");
+       
+   }
+}

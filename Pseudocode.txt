@@ -1,0 +1,64 @@
+21)Write Number 1 to 50
+
+Begin 
+   declare Num=1 to 50
+   read Num
+   display sum=sum+Num
+   input Num
+End
+______________________________
+________________________________
+2)find the largest of three numbers A,B and C
+
+Begin  
+   declare num1,num2,num3
+   read num1,num2,num3
+   if (num1>num2)
+           display num1+"is higher"
+   elseif (num2>num3)
+           display num2+"is higher"
+   else
+           display num3+"is higher"
+    endif
+end
+___________________________________________________________
+________________________________________________________________
+3)Marks <50 is fail , >50&<60 grade d , >80&<=100 grade a .
+
+Begin
+   display marks 
+   read marks
+   if (mark<50)&(>80<=100)&(>50&<60)
+   if(mark>55)
+         display "grade d"
+    elseif(mark<40)
+         display "fail"
+    endif
+End
+____________________________________________________________________
+____________________________________________________________________
+4) to check leapyear or not
+
+Begin
+   display lear year
+   read leap year
+   if(y%4==0)
+        display"leap year"
+   else
+        display"not leap year"
+   endif
+End
+______________________________________________________________________
+_________________________________________________________________________
+5)write 5 separate numbers 
+
+Begin
+   display Dharan
+   read Dharan
+   if(num=1 to 5)
+   if(num 3)
+       display "a"
+   elseif(num 4)
+        display "r"
+   endif
+End 

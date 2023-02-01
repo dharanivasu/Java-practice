@@ -1,0 +1,15 @@
+class Depreciation {
+  public static void main(String args[])
+  {
+    double inital_cost=12000,rate=10,years=2,temp;
+    temp=inital_cost;
+    for(int i=0;i<years;i++)
+      {
+        temp=((100-rate)*temp)/100;//
+      }
+        System.out.println("after depreciation"+temp);
+     
+  }
+}
+
+

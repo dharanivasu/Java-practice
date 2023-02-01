@@ -1,0 +1,59 @@
+combinator 
+psedu 
+spedu elements
+
+
+
+A Hospital Management System (HMS) is a computerized system that manages and stores patient information, including demographic data, medical history, laboratory test results, and treatment plans. The aim of an HMS is to improve efficiency, increase patient safety, and ensure that patient data is accurate and up-to-date. A patient information storing module within the HMS allows for secure storage of patient records and easy access by authorized personnel. The system also facilitates communication between healthcare providers and helps in decision making by providing real-time access to patient information.
+
+
+JavaScript is the Programming Language for the Web.
+JavaScript can update and change both HTML and CSS.
+JavaScript can calculate, manipulate and validate data.
+
+
+
+
+String
+represents sequence of characters e.g. "hello"
+
+Number
+represents numeric values e.g. 100
+
+Boolean
+represents boolean value either false or true
+
+Undefined
+represents undefined value
+
+Null
+represents null i.e. no value at all
+
+
+
+
+Object
+represents instance through which we can access members
+
+Array
+represents group of similar values
+
+RegExp
+represents regular expression
+
+
+
+
+<script>
+   
+    var a = prompt("Enter a value");
+    var b, sum = 0;
+    var z = a;
+    while(a > 0)
+    {
+      b = a % 10;
+      sum = sum * 10 + b;
+      a = parseInt(a / 10);
+    }
+    alert(sum);
+</script>

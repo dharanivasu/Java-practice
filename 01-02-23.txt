@@ -1,0 +1,32 @@
+function employe(){
+    //  emp = {
+    //     id:1,
+    //     name:"Amit",
+    //     salary:50000,
+    //     dept:"developer",
+    //     phoneNumber:[889419121,123456]
+    // }
+    // document.write(emp.id+" "+emp.name+" "+emp.salary,emp.dept,emp.phoneNumber);
+ 
+    // 2nd way
+    //  var emp = new Object();
+    //  emp.id=1;
+    //  emp.name="Amit";
+    //  emp.salary=123456;
+    //  emp.phoneNumber=[8894181261,9817665432];
+    //  document.write(emp.id,emp.name,emp.salary, emp.phoneNumber);
+ 
+    // 3rd way
+    function emp(id,name,salary,phoneNumber){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+        this.phoneNumber=phoneNumber;
+    }
+    var emp1=new emp(1,"Amit",1000,[12345678,987654354]);
+    document.write(emp1.id,emp1.name,emp1.salary,emp1.phoneNumber);
+}
+ 
+
+type of object
+number booolean string array object date math.
