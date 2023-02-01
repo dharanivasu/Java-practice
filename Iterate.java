@@ -13,8 +13,14 @@ import java.util.*;
   list.add("Black");
     
    Iterator itr=list.iterator();
-     for (String iterate : list) {
+     for (String iterate: list) {
     System.out.println(iterate);
     }
  }
-}
+
+
+
+
+
+
+                       

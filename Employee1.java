@@ -1,62 +1,26 @@
-//Employee details
+import java.util.HashMap;
+import java.util.*;
 
- import java.util.*;
- class Employee{
-   private int empid;
-   private String empname;
-   private long empphone;
-   private int salary;
-   private String address;
- 
-   void setEmpid(int empid){
-    this.empid=empid;
-   }
-     void setEmpname(String empname){
-     this.empname=empname;
-   }
-   void setEmpphone(long empphone){
-     this.empphone=empphone;
-   }
-   void setSalary(int salary){
-     this.salary=salary;
-   }
-   void setAddress(String address){
-     this.address=address;
-   }
-     //getters
-   int getEmpid(){
-     return this.empid;
-   }
-   String getEmpname(){
-     return this.empname;
-   }
-   long getEmpphone(){
-     return this.empphone;
-   }
-   int getSalary(){
-     return this.salary;
-   }
-   String getAddress(){
-     return this.address;
-   }
-  
- }
+public class Employee1 {
+  public static void main(String args[]) {
+    HashMap<Integer, String> employeeMap = new HashMap<Integer, String>();
+    Scanner sc = new Scanner(System.in);
 
- class Employee1{
-   public static void main(String args[]) {
-   Employee e[]=new Employee[4];
-    Scanner sc=new Scanner(System.in);
-    for(int i=0;i<4;i++){
-       e[i]=new Employee1();
-       System.out.println("Enter employee"+(i+1)+" details");
-    e[i].setEmpid(sc.nextInt());
-     e[i].setEmpname(sc.next());
-     e[i].setEmpphone(sc.nextLong());
-    e[i].setSalary(sc.nextInt());
-    e[i].setAddress(sc.next());
-     System.out.print(e[i].getEmpid()+" "+e[i].getEmpname()+" "+e[i].getEmpphone()+" "+e[i].getSalary()+" "+e[i].getAddress());
-    
-     }
-    
+    // Add employee data to the map
+    System.out.println("Enter the number of employees: ");
+    int num = sc.nextInt();
+    for (int i = 0; i < num; i++) {
+      System.out.println("Enter Employee code:");
+      int code = sc.nextInt();
+      System.out.println("Enter Employee name:");
+      String name = sc.next();
+      employeeMap.put(code, name);
+    }
+
+    // Display only the Employee Names
+    System.out.println("Employee Names: ");
+    for (String name : employeeMap.values()) {
+      System.out.println(name);
+    }
   }
- }
+}

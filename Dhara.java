@@ -1,24 +1,14 @@
-import java.util.*;
+import java.util.Scanner;
 class Dhara{
-  public static void main(String args[])
-  { 
-    Scanner sc=new Scanner(System.in);
-    int count;
-    System.out.println("Enter range");
-    int n=sc.nextInt();
-    for(int i=1;i<=n;i++){
-      count=0;
-          for(int j=1;j<=i;j++)
-      {
-        if(i%j==0)
-        {
-         count++;
-        }
-      }
-    if(count==2){
-      System.out.println(i);
-    }
-      
-    }
-    }
-  }
+    public static void main(String args[]){
+    Scanner Sc=new Scanner(System.in);
+    System.out.println("Enter the value of x and y");
+    x = Sc.nextInt();
+    y = Sc.nextInt();
+    System.out.println("before swaping number");
+    t=x;
+    x=y;
+    y=t;
+    System.out.println("after swaping number");
+}
+}
